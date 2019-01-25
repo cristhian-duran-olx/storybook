@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import CopyButton from './copyButton';
 import copy from './copy';
 
+import { monoFonts } from '@storybook/theming';
+
 const TOGGLE_TIMEOUT = 1800;
 
 class Pre extends React.Component {
@@ -45,7 +47,7 @@ class Pre extends React.Component {
             justifyContent: 'space-between',
             alignItems: 'center',
             fontSize: '.88em',
-            fontFamily: 'Menlo, Monaco, "Courier New", monospace',
+            fontFamily: monoFonts.fontFamily,
             backgroundColor: '#fafafa',
             padding: '.5rem',
             lineHeight: 1.5,
